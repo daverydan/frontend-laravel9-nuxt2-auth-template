@@ -185,7 +185,7 @@
 import { toastSuccessUtil } from "~/utils/toast";
 
 export default {
-  // middleware: "guest",
+  middleware: "guest",
 
   data() {
     return {

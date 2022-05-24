@@ -185,13 +185,13 @@
 import { toastSuccessUtil } from "~/utils/toast";
 
 export default {
-  // middleware: "guest",
+  middleware: "guest",
 
   data() {
     return {
       form: {
-        email: "danny.w.avery@gmail.com",
-        password: "password",
+        email: "",
+        password: "",
       },
       validations: {
         email: {
