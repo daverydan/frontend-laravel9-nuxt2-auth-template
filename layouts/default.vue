@@ -1,7 +1,7 @@
 <template>
   <div class="layout-no-header-full">
-    <header class="flex justify-between px-6 py-5">
-      <nuxt-link to="">Logo</nuxt-link>
+    <header class="flex justify-between px-6 py-5 bg-white">
+      <nuxt-link to="/">Logo</nuxt-link>
 
       <ul class="flex">
         <li class="mr-4">
@@ -25,13 +25,13 @@ export default {};
 
 <style>
 html {
-  height: 100%;
+  /* height: 100%; */
   background: #eee;
 }
 
-body {
+/* body {
   height: 100%;
-}
+} */
 
 .toasted-container.top-center {
   top: 5% !important;

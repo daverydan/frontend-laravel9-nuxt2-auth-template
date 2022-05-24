@@ -8,12 +8,12 @@
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Create an account
         </h2>
-        <p class="mt-2 text-center text-sm text-gray-600">
+        <!-- <p class="mt-2 text-center text-sm text-gray-600">
           Or
-          <a href="#" class="font-medium text-indigo-600 hover:opacity-75">
+          <a href="#" class="font-medium text-dodger-blue hover:opacity-75">
             start your 14-day free trial
           </a>
-        </p>
+        </p> -->
       </div>
 
       <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
@@ -59,7 +59,7 @@
                   type="text"
                   autocomplete="name"
                   required
-                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm"
+                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-dodger-blue focus:border-dodger-blue sm:text-sm"
                   :class="this.validations.name.message && 'border-red-600'"
                 />
               </div>
@@ -86,7 +86,7 @@
                   type="email"
                   autocomplete="email"
                   required
-                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm"
+                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-dodger-blue focus:border-dodger-blue sm:text-sm"
                   :class="this.validations.email.message && 'border-red-600'"
                 />
               </div>
@@ -113,7 +113,7 @@
                   type="password"
                   autocomplete="current-password"
                   required
-                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm"
+                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-dodger-blue focus:border-dodger-blue sm:text-sm"
                   :class="this.validations.password.message && 'border-red-600'"
                 />
               </div>
@@ -140,7 +140,7 @@
                   type="password"
                   autocomplete="confirm-password"
                   required
-                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm"
+                  class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-dodger-blue focus:border-dodger-blue sm:text-sm"
                   :class="
                     this.validations.password_confirm.message &&
                     'border-red-600'
@@ -158,7 +158,7 @@
             <div>
               <button
                 type="submit"
-                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
+                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-dodger-blue hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dodger-blue"
               >
                 Register
               </button>
@@ -168,7 +168,7 @@
               <div class="text-sm">
                 <nuxt-link
                   to="/login"
-                  class="font-medium text-indigo-600 hover:opacity-75"
+                  class="font-medium text-dodger-blue hover:opacity-75"
                 >
                   Already have an account?
                 </nuxt-link>
@@ -185,6 +185,8 @@
 import { toastSuccessUtil } from "~/utils/toast";
 
 export default {
+  // middleware: "guest",
+
   data() {
     return {
       server_error: "",
